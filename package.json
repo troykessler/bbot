@@ -1,0 +1,13 @@
+{
+  "name": "bbot",
+  "version": "1.0.0",
+  "description": "birthday reminder",
+  "main": "index.js",
+  "author": "Troy Kessler",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "slimbot": "^5.1.0"
+  }
+}
