@@ -14,17 +14,45 @@ app.get('/', (_, res) => {
 
 const birthdays = [
   {
-    name: 'Test 1',
-    date: new Date(2021, 6, 31, 10, 27, 0)
+    name: 'test',
+    cron: '* 39 12 31 7 *'
   },
-  {
-    name: '@troykessler',
-    date: new Date(2021, 6, 31, 10, 27, 0)
-  }
+  // {
+  //   name: '@mxmln',
+  //   cron: '* * 8 13 2 *',
+  // },
+  // {
+  //   name: '@fabianriewe',
+  //   date: new Date(2021, 2, 11, 8, 0, 0)
+  // },
+  // {
+  //   name: 'Luca',
+  //   date: new Date(2021, 4, 15, 8, 0, 0)
+  // },
+  // {
+  //   name: '@Johannes99',
+  //   date: new Date(2021, 5, 29, 8, 0, 0)
+  // },
+  // {
+  //   name: '@troykessler',
+  //   date: new Date(2021, 6, 25, 8, 0, 0)
+  // },
+  // {
+  //   name: 'Alex',
+  //   date: new Date(2021, 6, 28, 8, 0, 0)
+  // },
+  // {
+  //   name: '@Lucky130810',
+  //   date: new Date(2021, 7, 11, 8, 0, 0)
+  // },
+  // {
+  //   name: 'Karl',
+  //   date: new Date(2021, 7, 20, 8, 0, 0)
+  // }
 ]
 
 birthdays.forEach(birthday => {
-  scheduler.scheduleJob(birthday.date, () => {
+  scheduler.scheduleJob(birthday.cron, () => {
     slimbot.sendMessage(343754242, `Alles Gute zum Geburtstag ${birthday.name}! 🎉🎉`);
   })
 })
