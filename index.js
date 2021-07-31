@@ -15,7 +15,7 @@ app.get('/', (_, res) => {
 const birthdays = [
   {
     name: 'test',
-    cron: '* 39 12 31 7 *'
+    cron: '* 41 10 31 7 *'
   },
   // {
   //   name: '@mxmln',
