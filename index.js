@@ -14,10 +14,6 @@ app.get('/', (_, res) => {
 
 const birthdays = [
   {
-    name: 'test',
-    cron: '0 48 10 31 7 *'
-  },
-  {
     name: '@mxmln',
     cron: '0 0 8 13 2 *',
   },
@@ -42,18 +38,30 @@ const birthdays = [
     cron: '0 0 8 28 7 *'
   },
   {
+    name: '@Jonathan382',
+    cron: '0 0 8 3 8 *'
+  },
+  {
     name: '@Lucky130810',
     cron: '0 0 8 11 8 *'
   },
   {
     name: 'Karl',
     cron: '0 0 8 20 8 *'
+  },
+  {
+    name: 'Maxi R.',
+    cron: '0 0 8 15 9 *'
+  },
+  {
+    name: 'Aaron',
+    cron: '0 0 8 27 9 *'
   }
 ]
 
 birthdays.forEach(birthday => {
   scheduler.scheduleJob(birthday.cron, () => {
-    slimbot.sendMessage(343754242, `Alles Gute zum Geburtstag ${birthday.name}! 🎉🎉`);
+    slimbot.sendMessage(process.env.TELEGRAM_GROUP_ID, `Alles Gute zum Geburtstag ${birthday.name}! 🎉🎉`);
   })
 })
 
