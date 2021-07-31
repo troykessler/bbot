@@ -8,11 +8,11 @@ const slimbot = new Slimbot(process.env.BOT_TOKEN);
 const birthdays = [
   {
     name: 'Test 1',
-    date: new Date(2021, 6, 31, 12, 5, 0)
+    date: new Date(2021, 6, 31, 12, 11, 0)
   },
   {
     name: 'Test 2',
-    date: new Date(2021, 6, 31, 12, 6, 0)
+    date: new Date(2021, 6, 31, 12, 12, 0)
   }
 ]
 
