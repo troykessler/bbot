@@ -15,40 +15,40 @@ app.get('/', (_, res) => {
 const birthdays = [
   {
     name: 'test',
-    cron: '* 41 10 31 7 *'
+    cron: '0 10 46 31 7 *'
   },
-  // {
-  //   name: '@mxmln',
-  //   cron: '* * 8 13 2 *',
-  // },
-  // {
-  //   name: '@fabianriewe',
-  //   date: new Date(2021, 2, 11, 8, 0, 0)
-  // },
-  // {
-  //   name: 'Luca',
-  //   date: new Date(2021, 4, 15, 8, 0, 0)
-  // },
-  // {
-  //   name: '@Johannes99',
-  //   date: new Date(2021, 5, 29, 8, 0, 0)
-  // },
-  // {
-  //   name: '@troykessler',
-  //   date: new Date(2021, 6, 25, 8, 0, 0)
-  // },
-  // {
-  //   name: 'Alex',
-  //   date: new Date(2021, 6, 28, 8, 0, 0)
-  // },
-  // {
-  //   name: '@Lucky130810',
-  //   date: new Date(2021, 7, 11, 8, 0, 0)
-  // },
-  // {
-  //   name: 'Karl',
-  //   date: new Date(2021, 7, 20, 8, 0, 0)
-  // }
+  {
+    name: '@mxmln',
+    cron: '0 0 8 13 2 *',
+  },
+  {
+    name: '@fabianriewe',
+    cron: '0 0 8 11 3 *'
+  },
+  {
+    name: 'Luca',
+    cron: '0 0 8 15 5 *'
+  },
+  {
+    name: '@Johannes99',
+    cron: '0 0 8 29 6 *'
+  },
+  {
+    name: '@troykessler',
+    cron: '0 0 8 25 7 *'
+  },
+  {
+    name: 'Alex',
+    cron: '0 0 8 28 7 *'
+  },
+  {
+    name: '@Lucky130810',
+    cron: '0 0 8 11 8 *'
+  },
+  {
+    name: 'Karl',
+    cron: '0 0 8 20 8 *'
+  }
 ]
 
 birthdays.forEach(birthday => {
