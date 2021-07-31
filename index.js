@@ -54,6 +54,10 @@ const birthdays = [
     cron: '0 0 8 15 9 *'
   },
   {
+    name: 'Schneidau',
+    cron: '0 0 8 6 9 *'
+  },
+  {
     name: 'Aaron',
     cron: '0 0 8 27 9 *'
   }
